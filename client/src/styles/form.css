@@ -1,0 +1,59 @@
+.crud-container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.crud-container .form form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.crud-container .form form input{
+    padding: 7px;
+    border: 2px solid #282c34;
+    background-color: transparent;
+    color:#282c34;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.crud-container .form form input::placeholder{
+    color: rgb(89, 89, 89);
+    font-weight: 600;
+}
+
+.crud-container .form form button{
+    padding: 7px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.task ul li{
+    display: flex;
+    padding: 8px;
+    border: 2px solid rgb(196, 196, 196);
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.task ul li input{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 15px;
+}
+
+.task ul li button{
+    padding: 7px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(116, 0, 0);
+    border: none;
+    margin-left: auto;
+    cursor: pointer;
+}
