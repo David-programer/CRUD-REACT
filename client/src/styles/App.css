@@ -1,11 +1,123 @@
-.App {
+.crud-container{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+  padding: 20px;
   text-align: center;
   background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.crud-container .form form{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.crud-container .form form input{
+  padding: 7px;
+  border: 2px solid #282c34;
+  background-color: transparent;
+  color:#282c34;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.crud-container .form form input::placeholder{
+  color: rgb(89, 89, 89);
+  font-weight: 600;
+}
+
+.crud-container .form form button{
+  padding: 7px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.task ul li{
+  display: flex;
+  padding: 8px;
+  border: 2px solid rgb(196, 196, 196);
+  margin-bottom: 15px;
+  border-radius: 4px;
+  align-items: center;
+}
+
+.task ul li p{
+  font-size: 17px;
+  flex: 1 1 auto;
+  text-align: left;
+}
+
+.task ul li button{
+  padding: 7px;
+  font-weight: 600;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-eliminar{
+  background-color: rgb(116, 0, 0);
+}
+
+.btn-editar{
+  background-color: rgb(201, 90, 0);
+  margin-right: 15px;
+}
+
+.ventana-emergente{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, .4);
+  color: black
+}
+
+.ventana-emergente .container-div{
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.ventana-emergente .container-div h2{
+  font-size: 22px;
+}
+
+.ventana-emergente .container-div input{
+  margin: 20px 0px;
+  padding: 7px;
+  font-size: 15px;
+}
+
+.ventana-emergente .container-div div{
+  display: flex;
+}
+
+.ventana-emergente .container-div div button{
+  padding: 7px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.ventana-emergente .container-div div .btn-cerrar{
+  border: 1px solid gray;
+  color: gray;
+  background-color: transparent;
+  margin-right: auto;
+}
+
+.ventana-emergente .container-div div .btn-guardar{
+  border: 1px solid #282c34;
+  color: white;
+  background-color: #282c34;
 }
